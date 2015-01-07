@@ -34,8 +34,8 @@ import py.edu.unican.facitec.sesion.SesionCliente;
 
 		public formEstadia estadia;
 		private static final long serialVersionUID = 1L;
-		private final JPanel contenPanel = new JPanel();
-		private DefaultTableModel dtmCliente = new DefaultTableModel(null, new String[] {" Código", "Nombre", "Nro.Cedula "});
+		//private final JPanel contenPanel = new JPanel();
+		private DefaultTableModel dtmCliente = new DefaultTableModel(null, new String[] {" Cï¿½digo", "Nombre", "Nro.Cedula "});
 		private JTable table;
 		private JPanel contentPane;
 		private JTextField tfCodigo;
@@ -303,7 +303,7 @@ import py.edu.unican.facitec.sesion.SesionCliente;
 		            return;
 		        }
 				if (tfCedula.getText().length() == 0) {
-					 JOptionPane.showMessageDialog(null, "Número de Cédula es Obligatorio", "Aviso",1);
+					 JOptionPane.showMessageDialog(null, "Nï¿½mero de Cï¿½dula es Obligatorio", "Aviso",1);
 		            tfCedula.requestFocus();
 		            return;
 		        }
@@ -330,7 +330,7 @@ import py.edu.unican.facitec.sesion.SesionCliente;
 		            return;
 		        }
 				if (tfCedula.getText().length() == 0) {
-					 JOptionPane.showMessageDialog(null, "Número de Cédula es Obligatorio", "Aviso",1);
+					 JOptionPane.showMessageDialog(null, "Nï¿½mero de Cï¿½dula es Obligatorio", "Aviso",1);
 		            tfCedula.requestFocus();
 		            return;
 		        }
@@ -636,7 +636,7 @@ import py.edu.unican.facitec.sesion.SesionCliente;
 					
 					int seleccion = JOptionPane.showOptionDialog(this, "Desea eliminar al cliente: "+tfCodigo.getText()+","
 							+ "con codigo: "+tfCodigo.getText(), "Borrar", JOptionPane.YES_NO_CANCEL_OPTION,
-							JOptionPane.QUESTION_MESSAGE, null, new Object[]{"Sí", "No"}, "Si");
+							JOptionPane.QUESTION_MESSAGE, null, new Object[]{"Sï¿½", "No"}, "Si");
 					if(seleccion==0){
 						try {
 							SesionCliente.borrarCliente(Integer.parseInt(tfCodigo.getText()));
@@ -652,7 +652,7 @@ import py.edu.unican.facitec.sesion.SesionCliente;
 						} catch (Exception e) {
 							
 							e.printStackTrace();
-							JOptionPane.showMessageDialog(null, "No se puede eliminar porque el registro está en uso", "Aviso", 2);
+							JOptionPane.showMessageDialog(null, "No se puede eliminar porque el registro estï¿½ en uso", "Aviso", 2);
 						}
 						
 					}
