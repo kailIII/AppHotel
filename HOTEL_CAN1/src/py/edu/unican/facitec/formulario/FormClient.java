@@ -33,6 +33,7 @@ import py.edu.unican.facitec.sesion.SesionCliente;
 /**
  * 
  * @author Cosme Damian
+ * testes
  *
  */
 	public class FormClient extends JDialog {
