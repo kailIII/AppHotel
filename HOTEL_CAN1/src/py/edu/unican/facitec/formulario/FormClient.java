@@ -30,6 +30,11 @@ import py.edu.unican.facitec.entidades.Cliente;
 import py.edu.unican.facitec.interfaz.BuscarCliente;
 import py.edu.unican.facitec.sesion.SesionCliente;
 
+/**
+ * 
+ * @author Cosme Damian
+ *
+ */
 	public class FormClient extends JDialog {
 
 		public formEstadia estadia;
